@@ -23,13 +23,12 @@ Enter a name: Lebron
 That name is on the list
 """
 
+q = "Enter a name: "
+a = input(str(q))
 nameList = ["Lebron","Kobe","Michale","Shaq","Dennis"]
 
-q = "Enter a name: "
-a = input(q)
-
 for i in nameList:
-    if a == i[0] or a == i[1] or a == i[2] or a == i[3] or a == i[4]:
+    if a in nameList:
         print("That name is on the list")
         break
     else:
